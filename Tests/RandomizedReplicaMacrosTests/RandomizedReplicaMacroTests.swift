@@ -24,6 +24,10 @@ final class RandomizedReplicaMacroTests: XCTestCase {
             """
             struct Foo {
               let string: String
+
+              public func replica() -> Self {
+                  fatalError()
+              }
             }
             """
         }
